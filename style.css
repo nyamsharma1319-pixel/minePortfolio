@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+
+
+
+:root {
+    --lightblue: #00bcf2;
+    --blue: #0072be;
+    --stable-blue: #0076bf;
+    --midblue: #00188f;
+    --darkblue: #002050;
+    --lightpurple: #b4a0ff;
+    --purple: #5c2d91;
+    --darkpurple: #373277;
+    --lightmagenta: #e3008c;
+    --magenta: #b4009e;
+    --darkmagenta: #5c005c;
+    --red: #e81123;
+    --darkred: #a80000;
+    --lightorange: #df9233be;
+    --orange: #d83b01;
+    --insiders-green: #058f2d;
+    --lightyellow: #fff100;
+    --yellow: #ffcc00;
+    --lightgreen: #bad80a;
+    --green: #477a32;
+    --darkgreen: #004b1c;
+    --lightteal: #00b294;
+    --teal: #008272;
+    --darkteal: #004b50;
+    --gray-95: darken(white, 5%);
+    --lightgray: #e3e3e3;
+    --gray: #ccc;
+    --darkgray: #333;
+    --white: #ffffff;
+    --black: #000000;
+    --background: #0D1117;
+    --foreground: #9ba3b4;
+    --foreground-intense: #e6eefA;
+    --foreground-muted: #757b85;
+    --header-foreground: #c3d0e5;
+    --accent-primary: #0078d4;
+    --accent-secondary: #0069b9;
+    --link-foreground: #4daafc;
+    --link-foreground-hover: #8fc3fe;
+    --link-underline-background: var(--link-foreground);
+    --border-background: rgba(255, 255, 255, 0.12);
+    --header-background: var(--background);
+    --footer-background: var(--background);
+    --button-primary-background: var(--accent-primary);
+    --button-primary-foreground: var(--white);
+    --button-primary-border: transparent;
+    --button-primary-hover: #005ba4;
+    --button-secondary-background: #25292E;
+    --button-secondary-foreground: var(--header-foreground);
+    --button-secondary-border: rgba(255, 255, 255, 0.3);
+    --button-secondary-hover: #333940;
+    --icon-button-hover-background: rgba(255, 255, 255, 0.10);
+    --navbar-border: var(--border-background);
+    --search-container-background: var(--background);
+    --search-input-background: transparent;
+    --search-input-border: rgba(255, 255, 255, 0.15);
+    --search-input-border-active: var(--accent-primary);
+    --search-input-foreground: var(--foreground);
+    --search-input-placeholder-foreground: #9ba3b4;
+    --card-background: rgba(255, 255, 255, 0.04);
+    --card-hover-background: rgba(255, 255, 255, 0.08);
+    --card-border: rgba(255, 255, 255, 0.12);
+    --card-border-active: rgba(255, 255, 255, 0.2);
+    --feature-card-icon-background: rgba(255, 255, 255, 0.07);
+    --banner-background-color: rgba(0, 32, 80, 0.25);
+    --banner-background: linear-gradient(135deg, var(--background) 0%, var(--banner-background-color) 15%, var(--banner-background-color) 75%, var(--background) 100%);
+    --banner-link-color: var(--link-foreground);
+    --banner-text: var(--foreground);
+    --hero-background: linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
+    --hero-border-bottom: var(--border-background);
+    --hero-background-binary-grid: #797d97;
+    --hero-background-binary-grid-opacity: 0.35;
+    --home-foreground: #9FB1D1;
+    --code-background: rgba(255, 255, 255, 0.15);
+    --code-foreground: #cccccc;
+    --keybinding-background: rgba(255, 255, 255, 0.15);
+    --keybinding-foreground: var(--link-foreground);
+    --code-copy-foreground: #ccc;
+    --code-copy-background: #444;
+    --code-header-background: rgba(255, 255, 255, 0.05);
+    --code-header-foreground: #9FB1D1;
+    --button-background: rgba(255, 255, 255, 0.08);
+    --button-foreground: #cccccc;
+    --button-border: rgba(255, 255, 255, 0.15);
+    --button-hover-background: rgba(255, 255, 255, 0.12);
+    --button-hover-border: rgba(255, 255, 255, 0.25);
+    --button-active-background: rgba(255, 255, 255, 0.15);
+    --button-active-border: rgba(255, 255, 255, 0.35);
+    --focus-border: #007acc;
+    --vscode-dropdown-background: #2d2d30;
+    --scrollbar-slider-background: rgba(255, 255, 255, 0.15);
+    --scrollbar-slider-hover-background: rgba(255, 255, 255, 0.25);
+    --alert-note-border-color: var(--lightblue);
+    --alert-warning-border-color: var(--lightyellow);
+    --alert-important-border-color: var(--lightpurple);
+    --alert-caution-border-color: #FE7543;
+    --alert-tip-border-color: var(--lightgreen);
+    --docs-callout-border-color: var(--link-foreground);
+    --docs-callout-background: rgba(56, 55, 55, 0.2);
+    --docs-callout-gradient-start: #3d8acc;
+    --docs-callout-gradient-end: #3fb89e;
+    --error-code-foreground: #718096;
+    --syntax-keyword: #c586c0;
+    --syntax-function: #dcdcaa;
+    --syntax-param: #9cdcfe;
+    --syntax-type: #4ec9b0;
+    --syntax-comment: #6a9955;
+    --syntax-value: #569cd6;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: var(--card-background);
+}
+
+nav {
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+    color: var(--foreground);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav .container {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.container li {
+    position: relative;
+}
+
+.container .bottomStyle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 0.7vh;
+    width: 0%;
+    background-color: var(--link-underline-background);
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+.container .bottomStyle:hover::before {
+    width: 100%;
+}
+
+nav .container li {
+    font-size: 17px;
+    font-family: "SN pro", sans-serif;
+    font-weight: 550;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+nav .container .Logos li {
+    font-size: 24px;
+}
+
+nav .container .Logos {
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    color: var(--header-foreground);
+    font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.menu{
+    display: none;
+}
+
+.img-logo {
+    height: 9vh;
+    width: 9vh;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img-logo img {
+    height: 9vh;
+    width: 9vh;
+}
+
+.secondContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.secondContainer .material-symbols-outlined {
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    background-color: black;
+    color: var(--foreground);
+    border: none;
+}
+
+
+
+.hire{
+    width: 120px;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: var(--foreground-muted);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--header-foreground);
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.hire:hover{
+    background-color: var(--home-foreground);
+    color: var(--header-background);
+}
+.hire:hover .material-symbols-outlined {
+    color: var(--header-foreground);
+}
+
+
+.firstSection {
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--background);
+    color: var(--lightgray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    background-image:
+    linear-gradient(to right, rgba(92, 50, 207, 0.076) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(122, 51, 189, 0.095) 1px, transparent 1px),
+    radial-gradient(circle at center, transparent 40%, #0b0b0b 75%);
+    background-size: 40px 40px, 40px 40px, 100% 100%;
+}
+
+
+.text {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: "Ubuntu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+.firstText {
+    word-spacing: 10px;
+    letter-spacing: 5px;
+
+}
+
+.downloadCv {
+    height: 20vh;
+    width: 50vh;
+    background-color: var(--card-background);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.downloadCv button {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: var(--button-foreground);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#downloadSymbol {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.downloadCv button:hover {
+    border: 3px solid rgb(207, 206, 206);
+}
+
+.cvFirstText {
+    font-size: 13px;
+    margin-top: 12px;
+    font-family: "SN pro", sans-serif;
+}
+
+.cvSecondText {
+    font-size: 14px;
+    margin-top: 3px;
+    font-family: "SN pro", sans-serif;
+}
+
+.underline {
+    color: var(--foreground);
+    font-weight: 550;
+}
+
+.directContacts{
+    height: 20vh;
+    width:80%;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 25px;
+}
+.directContacts ul{
+    display:flex;
+    align-items: center;
+    width: 25%;
+    height: auto;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.directContacts ul li{
+    list-style: none;
+    padding:8px;
+    border-radius: 5px;
+    transition: 0.8s ease;
+}
+.directContacts ul li a{
+    text-decoration: none;
+    color: var(--foreground-muted);
+    transition: 0.8s ease;
+
+}
+
+.directContacts ul li:hover{
+    border: 1.5px solid var(--lightorange);
+    box-shadow: 0.5px 0.5px 10px var(--lightorange);
+}
+.directContacts ul li:hover{
+    a{
+        color:var(--lightorange);
+    }
+}
+
+.cards{
+    height: 20vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.cards div{
+    height: 20vh;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    text-align: left;
+    background-color: var(--card-background);
+    border-radius: 5px;
+    color: var(--home-foreground);
+    position: relative;
+    cursor: pointer;
+}
+.cards div ul{
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.cards div h1{
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    word-spacing: 5px;
+}
+.cards div ul li{
+    margin-top: 5px;
+}
+.cards div .frontendList li::marker{
+    color: red;
+}
+.cards div .backendList li::marker{
+    color: blue;
+}
+.cards div .uiuxList li::marker{
+    color: green;
+}
+.cards .frontend::before,
+.cards .backend::before,
+.cards .uiuxDesign::before{
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    z-index: 1;
+    transition: 0.3s ease all;
+}
+.cards .frontend:hover::before{
+    background-color: rgba(223, 86, 86, 0.503);
+    opacity: 0.3;
+}
+.cards .backend:hover::before{
+    opacity: 0.3;
+    background-color: rgba(55, 55, 197, 0.538);
+}
+.cards .uiuxDesign:hover::before{
+    opacity: 0.3;
+    background-color: rgba(46, 191, 46, 0.447);
+}
+.Projects{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--background);
+    overflow: hidden;
+}
+.Projects h1{
+    color: var(--header-foreground);
+    text-transform: capitalize;
+    font-family: "SN",sans-serif;
+    position: relative;
+    cursor: pointer;
+}
+.Projects .projectHeader::before{
+    content: " ";
+    height: 5px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: -3px;
+    transition: width 0.4s ease;
+    cursor: pointer;
+}
+.Projects .projectHeader:hover::before{
+    width: 100%;
+}
+.projectsCards{
+    width:200vh;
+}
+.Projects .projectsCards div h1{
+    font-size: 18px;
+}
+.Projects .projectsCards div ul{
+    display: flex;
+    flex-direction: column;
+}
+.Projects .projectsCards div ul li{
+    list-style: none;
+}
+.Projects .projectsCards div ul li a{
+    height: 3vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    gap: 9px;
+    font-weight: 600;
+    font-family: "Ubuntu",sans-serif;
+    transition: 0.4s ease all;
+}
+.Projects .projectsCards div ul li a:hover{
+    color: var(--foreground-intense);
+}
+.Projects .projectsCards div ul li a span{
+    font-size: 17px;
+    transform: scale(1);
+    transition: 0.3s ease all;
+}
+.Projects .projectsCards div ul li a:hover{
+    span{
+    transform: scale(1.3);
+    color: var(--foreground-intense);
+    }
+}
+
+.workExperiences{
+    height: auto;
+    width:100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--foreground);
+    font-family: "Ubuntu",sans-serif,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--background);
+    position: relative;
+}
+.workExperiences h1{
+    cursor: pointer;
+    position: relative;
+}
+.workExperiences h1::before{
+    content: " ";
+    height: 5px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.4s ease all;
+    cursor: pointer;
+}
+.workExperiences h1:hover::before{
+    width: 100%;
+}
+/* TIMELINE WRAPPER */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 40px 0;
+}
+
+/* CENTER LINE */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--button-foreground);
+  top: 40px;          /* <-- IMPORTANT */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ITEM */
+.timeline-item {
+  position: relative;
+  width: 90%;
+  padding: 20px 40px;
+}
+
+/* LEFT / RIGHT */
+.timeline-item.left {
+  left: -39%;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 49%;
+}
+
+/* BULLET */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: 4px solid var(--foreground-muted);
+  top: 30px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* BULLET ALIGNMENT */
+.timeline-item.left::after {
+  right: -8px;
+}
+
+.timeline-item.right::after {
+  left: -8px;
+}
+
+/* ARROWS */
+.timeline-item.left::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 30px;
+  border: 10px solid transparent;
+  border-left-color: white;
+}
+
+.timeline-item.right::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 30px;
+  border: 10px solid transparent;
+  border-right-color: white;
+}
+
+/* CONTENT */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+}
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background);
+    color: var(--header-foreground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:50px;
+    
+}
+.contact h1{
+    position: relative;
+}
+.contactContainer{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mail{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mail input{
+    margin-bottom: 20px;
+    height: 7vh;
+    width: 55vh;
+    font-family: "Ubuntu",sans-serif;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 3px solid var(--border-background);
+    outline: none;
+    color: var(--header-foreground);
+    background-color: transparent;
+}
+.mail input:focus{
+    border: 3px solid var(--button-foreground);
+}
+.mail #textArea{
+    border: 3px solid var(--border-background);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--banner-text);
+    padding: 5px 10px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.mail #textArea:focus{
+    border: 3px solid var(--button-foreground);
+}
+.mail button{
+    height: 5vh;
+    width: 20vh;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid var(--border-background);
+    /* background-color: transparent; */
+    background: linear-gradient(270deg,var(--orange),var(--accent-secondary));
+    color: var(--code-header-foreground);
+    cursor: pointer;
+    transition: 0.4s ease all;
+}
+.mail button:hover{
+    border: 3px solid var(--header-foreground);
+    color: var(--teal);
+}
+
+.texts p{
+    letter-spacing: 1px;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 700;
+    margin: 20px 0px;
+    font-size: 27px;
+}
+
+.contact h1::before{
+    content: " ";
+    height: 0.7vh;
+    width: 10%;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: width 0.4s ease;
+    cursor: pointer;
+}
+.contact h1:hover::before{
+    width: 100%;
+}
+
+@media (max-width:1280px) {
+    
+    body{
+        width: 100%;
+        overflow: none;
+    }
+    .cards div{
+        height: 30vh;
+        width: 40vh;
+    }
+    .projectsCards{
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .projectsCards div{
+        width: 40vh;
+    }
+}
+
+@media (max-width:3000px) {
+    body{
+        width: 100%;
+        overflow: none;
+    }
+    
+    .cards div{
+        height: 20vh;
+        width: 70vh;
+        margin: 0px 10px;
+    }
+    .projectsCards{
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .projectsCards div{
+        width: 40vh;
+    }
+}
+@media (max-width:920px) {
+   
+   body{
+    width: 100%;
+   }
+   .img-logo{
+    display: none;
+   }
+   .menu{
+    display: block;
+   }
+   .secondContainer{
+    display: none;
+   }
+   .bottomStyle{
+    display: none;
+   }
+   .firstSection{
+    height: auto;
+   }
+   .text span{
+    font-size: 30px;
+   }
+   .firstText{
+    text-align: center;
+   }
+   .directContacts{
+    width: 100%;
+    display: flex;
+   }
+   .directContacts ul{
+    width: 100%;
+    display: flex;
+   }
+   .cards{
+    height: auto;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+   }
+   .cards div{
+    width: 45vh;
+    height: 35vh;
+    margin-top: 40px;
+   }
+   .Projects{
+    height: auto;
+
+   }
+   .projectHeader{
+    margin-top: 40px;
+   }
+   .workExperiences{
+    height: auto;
+    display: none;
+   }
+   .contact{
+    height: auto;
+   }
+   .contactContainer{
+    display: flex;
+    flex-direction: column;
+   }
+   .texts{
+    width: 100%;
+   }
+   .texts p{
+    font-size: 20px;
+    width: 100%;
+   }
+   .main{
+    width: 100%;
+   }
+   .mail input{
+    width: auto;
+   }
+}
+@media (max-width:1024px) {
+   body{
+    width: 100%;
+   }
+    .img-logo{
+    display: none;
+   }
+   .menu{
+    display: block;
+   }
+   .secondContainer{
+    display: none;
+   }
+   .bottomStyle{
+    display: none;
+   }
+   .firstSection{
+    height: auto;
+   }
+   .text span{
+    font-size: 30px;
+   }
+   .firstText{
+    text-align: center;
+   }
+   .directContacts{
+    width: 100%;
+    display: flex;
+   }
+   .directContacts ul{
+    width: 100%;
+    display: flex;
+   }
+   .cards{
+    height: auto;
+    padding: 40px 10px;
+    margin-bottom: 20px;
+   }
+   .cards div{
+    width: 45vh;
+    height: 45vh;
+    margin-top: 40px;
+   }
+   .Projects{
+    height: auto;
+
+   }
+   .projectHeader{
+    margin-top: 40px;
+   }
+   .workExperiences{
+    height: auto;
+    display: none;
+   }
+   .contact{
+    height: auto;
+   }
+   
+   .texts{
+    width: 100%;
+   }
+   .texts p{
+    font-size: 20px;
+    width: 100%;
+   }
+   .main{
+    width: 100%;
+   }
+   .mail input{
+    width: auto;
+   }
+}
