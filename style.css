@@ -385,6 +385,7 @@ nav .container .Logos {
     padding: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    position: relative;
 }
 
 .downloadCv button {
@@ -401,6 +402,8 @@ nav .container .Logos {
     background-color: var(--button-foreground);
     transition: 0.5s ease;
     cursor: pointer;
+    position: absolute;
+    z-index: 1;
 }
 
 #downloadSymbol {
