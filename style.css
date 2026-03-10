@@ -237,6 +237,75 @@ nav .container .Logos {
     background-color: black;
     color: var(--foreground);
     border: none;
+  
+}
+
+.menu i{
+    display: none;
+}
+
+
+.sidebar{
+    height: 50vh;
+    width: 30vh;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    border: 3px solid rgba(108, 104, 104, 0.801);
+    position: absolute;
+    right: 0;
+    top: 15vh;
+    z-index: 1;
+    border-radius: 7px;
+    display: none;
+}
+.sidebar .material-symbols-outlined{
+      position: absolute;
+     z-index: 1;
+}
+
+.sidebar ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.sidebar ul .features{
+    height: 5vh;
+    width: 80%;
+    background-color: black;
+    color: rgb(236, 231, 231);
+    display: flex;
+    align-items: center;
+    padding-inline: 20px 0px;
+    margin-top: 10px;
+    border-radius: 7px;
+
+}
+.sidebar ul .support{
+      height: 5vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px 0px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+.sidebar .hire{
+          height: 5vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px 0px;
+    margin-top: 10px;
+    border-radius: 7px;
 }
 
 
