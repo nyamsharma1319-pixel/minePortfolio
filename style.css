@@ -722,8 +722,73 @@ nav .container .Logos {
   border: 10px solid transparent;
   border-right-color: white;
 }
+/*----------------skillSlider-------------*/
 
-/* CONTENT */
+body{
+    background-color: var(--background);
+    color: white;
+}
+
+.carousel {
+    min-height: 20vh;
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    color: white;
+    background-color: transparent;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 10px;
+    animation: spin 10s infinite linear;
+    cursor: pointer;
+}
+
+.skillSlide {
+    flex: 0 0 10vh;
+    height: 10vh;
+    padding: 1em;
+    background-color: transparent;
+    border: 3px solid rgb(64, 62, 62);
+    text-align: center;
+    align-content: center;
+    border-radius: 7px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card i{
+    border-radius: 10px;
+}
+.card:hover{
+    color: orange;
+    box-shadow: 0.5px 0.5px 10px rgba(255, 166, 0, 0.392);
+    text-shadow:0.5px 0.5px 10px rgba(255, 166, 0, 0.392) ;
+}
+
+
+@keyframes spin {
+    from {
+        translate: 0%;
+    }
+
+    to {
+        translate: -100%;
+    }
+
+}
+/*------------ CONTENT ---------------*/
 .content {
   padding: 20px 30px;
   background-color: white;
