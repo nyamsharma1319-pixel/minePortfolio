@@ -768,10 +768,10 @@ body{
     align-items: center;
     justify-content: center;
 }
-.card i{
+.skillSlide i{
     border-radius: 10px;
 }
-.card:hover{
+.skillSlide:hover{
     color: orange;
     box-shadow: 0.5px 0.5px 10px rgba(255, 166, 0, 0.392);
     text-shadow:0.5px 0.5px 10px rgba(255, 166, 0, 0.392) ;
